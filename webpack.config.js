@@ -10,7 +10,7 @@ module.exports = {
 		clean: true
 	},
 	resolve: {
-		extensions: [".ts", ".tsx"]
+		extensions: [".js", ".ts", ".tsx", ".jsx"]
 	}, 
 	externals: {
 		react: "react"
@@ -24,9 +24,23 @@ module.exports = {
 			},
 			{
 				test: /\.(ts|tsx)?$/,
-				use: ["ts-loader"],
+				use: "ts-loader",
 				exclude: /node_modules/
-			}
+			},
+			{
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                "@babel/preset-env",
+                "@babel/preset-react",
+                "@babel/preset-typescript",
+              ],
+            },
+          },
+        },
 		],
 	}
 }
