@@ -2,7 +2,7 @@
 
 React zz-modal is a easiest way to create and custom a dialog in your app.
 
-- Very small (less than 15Kb)
+- Very small (less than 10Kb)
 - Mobile friendly
 - Without dependencies
 - Customizable 
