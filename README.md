@@ -47,3 +47,9 @@ The `Modal` component accepts the following props:
 - `setActive` (function, required) : Triggers `active` props value.
 - `children` (ReactNode) : Children passed to the modal body, your own content.
 - `customClass` (string, optional) :  Custom CSS class name to be added to the modal for additional styling or customization in your usual way.
+
+## Prerequisites
+
+![npm](https://img.shields.io/badge/npm-9.2.0-%23000000?style=flat-square&logo=npm&logoColor=white)
+
+![Node.js](https://img.shields.io/badge/Node.js-18.12.1-43853D?style=flat-square&logo=node.js&logoColor=white)
